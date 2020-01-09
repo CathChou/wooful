@@ -388,7 +388,7 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .g6{ width: 150px; bottom: 16px; margin-left: -75px;}
 .lottery-box{ border-radius: 30px; border-top: 5px solid #af8633; padding: 20px 0 145px; }
 .lottery-t{ width: 310px; }
-.lottery-t-number{ font-size: 3,5rem; top: 53px; left: 40px; }
+.lottery-t-number{ font-size: 3.5rem; top: 53px; left: 40px; }
 .classic{ padding: 30px 20px 90px; }
 .classic-box, .classic-b1, .classic-b2, .classic-b3, .classic-b4, .classic-b5, .classic-b6{ margin-top: 30px; }
 
