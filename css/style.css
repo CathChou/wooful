@@ -213,7 +213,7 @@ relative;z-index: 2; margin-bottom: 10px;}
 .musi-env{ width: 259px; position: absolute;bottom: -20px; left: 50%; margin-left: -130px; }
 
 /*----- remote -----*/
-.remo{ background: url(../images/remote_bg.png) no-repeat center top; position: relative;margin-top: -280px;z-index: 3;padding-top: 250px;}
+.remo{ background: url(../images/remote_bg.png) no-repeat center top; position: relative;margin-top: -280px;z-index: 2;padding-top: 250px;}
 .remo-c{ border-radius: 40px; width: 100%; background-color: #FFEECB; padding: 20px 20px 0;margin-top: -90px;}
 .remo-c ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding: 20px 0;}
 .remo-c ul li.remo3{vertical-align: top;}
