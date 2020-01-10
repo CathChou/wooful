@@ -16,7 +16,7 @@ $(document).ready(function() {
     }
     else {
         var secondaryNav = $('#navigation-menu'),
-        navHeight = secondaryNav.offset().top+400;
+        navHeight = secondaryNav.offset().top+1200;
     }
 
     $(window).on('scroll', function() {
