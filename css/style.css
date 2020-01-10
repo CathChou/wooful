@@ -23,7 +23,7 @@ a, button{ text-decoration:none; transition: all .5s ease;-webkit-transition:all
 .wrap{ position: relative; }
 #navigation-menu img, .kv img, .fixed-bg img, .fixed-c img, .lottery img, .sale img, .gaming img
 , .musi img, .musi2 img, .remo img, .classic img{ max-width: 100%;height: auto;display: block;}
-p{ font-size:1rem;color: #000;}
+p.t{ font-size:1rem !important;color: #660F13; letter-spacing: 2px;}
 .container{width: 1680px; margin: 0 auto; position: relative;}
 .sub-t{ color: #660F13; font-size: 1.875rem; margin: 10px auto 15px; text-align: center; font-weight: bold; 
 letter-spacing: 5px;width: 525px; position: relative; }
@@ -110,7 +110,6 @@ height: 65px; background-size: 100%;}
 height: 65px; background-size: 100%;}
 .fixed-box li a span.remote{ background: url(../images/menu8.png) no-repeat; width: 40px; display: block; margin-right: 10px;
 height: 65px; background-size: 100%;}
-
 .fixed-box li a:hover span{transition: background .5s ease;-webkit-transition:background .5s ease;-o-transition:background .5s ease;
 -moz-transition:background .5s ease;}
 .fixed-box li a:hover span.speed{ background: url(../images/menu1_hover.png); background-size: 100%; }
@@ -122,6 +121,15 @@ height: 65px; background-size: 100%;}
 .fixed-box li a:hover span.voice{ background: url(../images/menu7_hover.png); background-size: 100%; }
 .fixed-box li a:hover span.remote{ background: url(../images/menu8_hover.png); background-size: 100%; }
 .fixed-box li a span.t{ display: table-cell; vertical-align: middle; }
+
+/* menu scroll fixed */
+.scroll{ display: none; text-align: center;}
+.scroll ul li a{ color: #000; cursor: pointer; font-size: 1.25rem; font-weight: bold;}
+.fixed { position: fixed ; top: 0 ; z-index: 100; padding:10px 0 ; width: 100% ; background: #FFEECB ; display: block; left: 0;}
+.fixed ul{ padding: 10px 0 !important;}
+.fixed li{ display: inline-block; margin: 0 30px;}
+.fixed li a:hover p.mt-2{color: #ffe400 !important;text-decoration:none; transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
+-moz-transition:all .5s ease;}
 
 /*----- lottery -----*/
 .lottery{ background:#E4AE3F; position: relative; padding-bottom: 280px;}
@@ -167,38 +175,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02027', end
 .sale{ background: url(../images/sale_bg.png) no-repeat center top; margin-top: -130px; position: relative; padding: 35px 0 190px;}
 .sale-t{ width: 631px; margin: 0 auto;}
 .sale-c, .gaming-c, .music-c{ width: 100%; padding: 0 180px; }
-.sale-box{ width: 29.3%; margin: 25px; display: inline-block; position: relative;}
+.sale-box, .gaming-box{ width: 29.3%; margin: 25px; display: inline-block; position: relative;}
 .sale-box:hover .sale-pd, .buy-box:hover .buy-pd{ transform: scale(1.1);transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
 -moz-transition:all .5s ease;}
-.sale-box p{ position: absolute;bottom: 35px;font-size: 1.875rem; left: 50%; margin-left: -95px; font-weight: bold;  text-align: center;}
-.sale-box p.b{margin-left: -95px;}
-.sale-box p.s{margin-left: -82px;}
-.sale-box p span, .gaming-box p span{ font-size: 1.312rem; display: block; font-weight: 300; }
+.sale-box p{ position: absolute;font-size: 1.875rem; left: 0; margin: auto; right: 0;bottom: 20px;width: 100%;font-weight: bold;  text-align: center;}
+.sale-box p span{ font-size: 1.312rem; display: block; font-weight: 300; }
+.sale-box p span.t{font-size: 1rem; letter-spacing: 2px; font-weight: bold;}
 .sale-content{ padding: 10px 0;}
 
 /*----- gaming -----*/
-.gaming{ background: url(../images/game_bg.png) no-repeat center top; position: relative; padding: 35px 0 110px; margin-top: -70px;}
+.gaming{ background: url(../images/game_bg.png) no-repeat center top; position: relative; padding: 35px 0 130px; margin-top: -70px;}
 .gaming-t{ width: 391px; margin: -150px auto 30px;}
 .gaming-content{ background: url(../images/game_bg2.png) no-repeat center top;}
 .gaming-c{ width: 100%; text-align: center; }
 .gaming-c ul{ margin: 30px 0;  }
-.gaming-box{ width: 29%; margin: 25px; display: inline-block; position: relative; background-color: #fff ;height: 390px;
-background: url(../images/game_bg3.png) no-repeat center top; background-size: 100%;}
-.gaming-box:hover{ background: url(../images/game_bg4.png) no-repeat center top;background-size: 100%; }
-.gaming-box p{ margin: 50px auto 0; width: 291px;font-size: 1.875rem;  font-weight: bold;  text-align: center;}
-.gaming-box p.nomargin { margin: 0 auto;}
-.gaming-1{ width: 400px; margin: -20px auto; }
-.gaming-2{ width: 346px; margin: 10px auto;}
-.gaming-3{ width: 437px; margin: 105px 0 20px -20px; }
-.gaming-4{ width: 326px; margin: 10px auto 40px;}
-.gaming-5{ width: 284px; margin: -10px auto; }
-.gaming-6{ width: 345px; margin: -10px auto;}
-.gaming-7{ width: 334px; margin: -10px auto;}
-.gaming-8{ width: 396px; margin: -30px auto;}
-.gaming-9{ width: 364px; margin: -20px auto;}
-.gaming-10{ width: 205px; margin: -40px auto;}
-.gaming-11{ width: 240px; margin: -50px auto;}
-.gaming-12{ width: 262px; margin: -30px auto;}
 .gaming-r{ position: absolute; top: 200px; right: 0; width: 514px; }
 .gaming-l{ position: absolute; top: 1350px; left: 0; width: 506px;}
 
@@ -208,10 +198,11 @@ margin-top: -200px;}
 .musi2{ background: url(../images/music_bg2.png) no-repeat center top; margin-top: -350px; position: relative; padding-top: 270px;}
 .musi ul, .musi2 ul, .remo-c ul{ text-align: center; }
 .musi ul li, .musi2 ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding-bottom: 100px;
-position: relative; height: 360px;}
+position: relative; height: 420px;}
 .musi ul li p, .musi2 ul li p, .remo-c ul li p{ font-size: 1.875rem;  font-weight: bold;  text-align: center; display: block; position:
 relative;z-index: 2; margin-bottom: 10px;}
 .musi ul li p span, .musi2 ul li p span, .remo-c ul li p span{ display: block;font-size: 1.312rem; font-weight: 300;}
+.musi ul li p span.t, .musi2 ul li p span.t{ font-size: 1rem; letter-spacing: 2px; font-weight: bold; }
 .musi-t{ width: 451px; margin: 0 auto 20px;}
 .musi-1{ width: 205px; display: block; margin: 0 auto; position: relative;z-index: 2;}
 .musi-2{ width: 202px; display: block; margin: 0 auto; position: relative;z-index: 2;}
@@ -229,7 +220,7 @@ relative;z-index: 2; margin-bottom: 10px;}
 .remo-t{ width: 391px; margin: 0 auto 10px;}
 .remo-1{ width: 231px; display: block; margin: 0 auto 20px;}
 .remo-2{ width: 277px; display: block; margin: 0 auto 20px;}
-.remo-3{ width: 399px; display: block; margin: 20px auto 60px;}
+.remo-3{ width: 399px; display: block; margin: 20px auto; min-height: 317px;}
 
 /*----- method -----*/
 .method{ background-color: #E4AE3F; padding: 70px 0; color: #660F13;}
@@ -266,12 +257,19 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .fixed-box li.dts{ margin:0 20px 0 0px; }
 .sale-box{  margin: 25px 20px;}
 .sale-c, .gaming-c{ padding: 0 100px; }
-.gaming-box{ height: 360px; width: 28.4%;}
-.gaming-box p{ bottom: 105px; }
-.gaming-1{ width: 100%; }
-.gaming-2{ width: 85%; }
-.gaming-3{ width: 110%; }
+.gaming-c ul{margin: 10px 0;}
 .gaming-r, .gaming-l{ width: 30%; }
+.remo{padding: 250px 40px 0;}
+.music-c{ padding: 0 70px; }
+}
+
+@media screen and (max-width: 1450px){
+.method ol{ width: 880px; }
+.remo-c ul li{ width: 29%;}
+.remo-1{ width:170px; }
+.remo-2{ width:180px; }
+.remo-3{ width:290px; min-height: 237px; }
+.musi ul li, .musi2 ul li{ width: 28.7%; }
 }
 
 @media screen and (max-width: 1280px){
@@ -294,6 +292,14 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .buy-t{ width: 85%;}
 .buy-c{ background: none;}
 .buy-box{ width: 70%;}
+.sale-c, .gaming-c{ padding: 0 40px; }
+.sale-box{ margin: 25px 10px; width: 30.8%;}
+.sale-box p, .musi ul li p, .musi2 ul li p, .remo-c ul li p{ font-size: 1.5rem; }
+.musi ul li p span, .musi2 ul li p span, .remo-c ul li p span{font-size: 1.125rem;}
+.remo-c ul li{ width: 28%;}
+.gaming-content{ padding: 30px 0 50px; }
+.music-c{ padding: 0 40px; }
+
 }
 
 @media screen and (max-width: 1023px){
@@ -319,10 +325,27 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .lottery-t{ width: 760px;}
 .lottery-t-img{ width: 80%;}
 .lottery-t-number{ font-size: 6.8rem; top: 103px; left: 188px;}
-.lottery-t p{ font-size: 1.375rem;}
+.lottery-t p, .sale-box p, .buy-box p, .musi ul li p, .musi2 ul li p,
+.remo-c ul li p{ font-size: 1.375rem;}
 .buy-box{ width: 80%;}
 .buy-box p{ width: 80%; font-size: 1.375rem;}
 .date{ margin-top: -145px;font-size: 1.375rem;}
+.sale-c, .gaming-c{ padding: 0 40px; }
+.sale-box{ margin: 10px; width: 29.9%;}
+.sale-box p{ bottom: 15px;}
+.sale-box p span{ font-size: 1.125rem;}
+.gaming-box{ width: 43%; margin: 10px 20px;}
+.gaming-r, .gaming-l{display: none;}
+.remo{background:url(../images/remote_bg_m.png) no-repeat center top; padding: 250px 20px 0;}
+.remo-c ul li{ width: 27%; }
+.remo-1{ width: 130px; }
+.remo-2{ width: 160px; }
+.remo-3{ width: 180px; min-height: 160px; }
+.method ol{ width: 90%; }
+.music-c{ padding: 0 20px; }
+.musi ul li, .musi2 ul li{ width: 27%; height: auto; }
+.musi-env{ width: 100%; bottom: 0; left: 0; margin: auto; }
+.musi-1, .musi-2, .musi-3{ width: 90%; }
 }
 
 @media screen and (max-width: 767px){
@@ -362,6 +385,26 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .buy-box{ margin-top: -40px; width: 85%;}
 .date{ margin-top: -60px; }
 .buy-box p{ width: 100%;}
+.sale{ background: url(../images/sale_bg_m.jpg) no-repeat center top; padding: 35px 0 160px;}
+.sale-c, .gaming-c{ padding: 0 60px; }
+.sale-box{ margin: 10px; width: 100%;}
+.sale-box p{ font-size: 1.375rem; bottom: 50px;}
+.gaming{ background: url(../images/game_bg_m.png) no-repeat center top; }
+.gaming-content{ padding: 0 0 50px; background: none; }
+.gaming-box{ width: 80%; margin-bottom: 20px !important;}
+.sub-t, .sale-t{ width: 85%; }
+.remo-t, .gaming-t, .musi-t{ width: 60%; }
+.gaming-t{ margin: -120px auto 30px; }
+.remo-c{ padding: 70px 20px 0; }
+.remo-c ul li{ width: 90%;}
+.remo-1, .remo-2, .remo-3{ width: 40%; }
+.remo-3{ min-height: auto; }
+.musi{ margin-top: -280px; }
+.musi ul li, .musi2 ul li{ width: 70%; margin: 20px auto; }
+.musi-1, .musi-2, .musi-3{ width: 50%; }
+.musi{background: url(../images/music_bg_m.png) no-repeat center top}
+.musi-t{ margin: 80px auto 20px; }
+.musi-env{width: 80%; bottom: 0;left: 0;right: 0;margin: auto;}
 
 .classic-box{ width: 50%;}
 .classic{ padding: 30px 70px 90px; }
@@ -406,6 +449,21 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .date{ margin-top: -50px; font-size: 1.125rem;}
 .buy-box p{ font-size: 1.125rem; padding: 5px 0;}
 .price{ font-size: 2.5rem;}
+.sale-t, .sub-t{ width: 90%; }
+.sub-t{ font-size: 1.375rem; }
+.sale{ padding: 35px 0 140px;}
+.sale-c, .gaming-c{ padding: 0 20px; }
+.sale-box{ margin: 0;}
+.sale-box p{bottom: 30px;}
+.gaming-box{ width: 100%; }
+.gaming-t{margin: -90px auto 30px;}
+.remo-c ul li{ margin: 0 auto; padding: 10px 0; }
+.remo-1, .remo-2, .remo-3{ width: 60%; }
+.musi ul li p span, .musi2 ul li p span, .remo-c ul li p span{ font-size: 1rem; }
+.method{ padding: 30px 0; }
+.method-t{ font-size: 1.375rem; }
+.method ol{ width: 75%; margin: 20px 0 0 40px; }
+.sub-bg{ height: 30px; width: 20%; }
 
 .classic{ padding: 30px 20px 90px; }
 .classic-box, .classic-b1, .classic-b2, .classic-b3, .classic-b4, .classic-b5, .classic-b6{ margin-top: 30px; }
