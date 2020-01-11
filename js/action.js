@@ -1,24 +1,14 @@
-//reload
-//var windowWidth = $(window).width();
-    //$(window).resize(function() {
-    //if(windowWidth != $(window).width()){
-    //location.reload();
-    //return;
-    //}
-//});
-
 //scrollfix
 var ww = $(window).width();
 $(document).ready(function() {
     if (ww < 1024) {
-        var secondaryNav = $('#navigation-menu, .menu-m'),
+        var secondaryNav = $('.logopic'),
         navHeight = secondaryNav.offset().top+200;
     }
     else {
-        var secondaryNav = $('#navigation-menu'),
+        var secondaryNav = $('.logopic'),
         navHeight = secondaryNav.offset().top+1200;
     }
-
     $(window).on('scroll', function() {
     
          if ($(window).scrollTop() > navHeight) {
@@ -55,20 +45,29 @@ var adjustMenu = function() {
 
 //選單下滑動態
 $(function(){
-    $('#bt-classic, #bt2-classic, #bt3-classic, #bt4-classic').click(function(){
-        $('body,html').animate({scrollTop:$('#s-classic').offset().top-70}, 800);
+    $('#bt-speed, #bt2-speed, #bt3-speed').click(function(){
+        $('body,html').animate({scrollTop:$('#speed-content').offset().top-150}, 800);
     });
-    $('#bt-ig, #bt2-ig, #bt3-ig, #bt4-ig').click(function(){
-        $('body,html').animate({scrollTop:$('#s-ig').offset().top-200}, 800);
+    $('#bt-fashion, #bt2-fashion, #bt3-fashion').click(function(){
+        $('body,html').animate({scrollTop:$('#fashion-content').offset().top-150}, 800);
     });
-    $('#bt-food, #bt2-food, #bt3-food, #bt4-food').click(function(){
-        $('body,html').animate({scrollTop:$('#s-food').offset().top-70}, 800);
+    $('#bt-business, #bt2-business, #bt3-business').click(function(){
+        $('body,html').animate({scrollTop:$('#business-content').offset().top-150}, 800);
     });
-    $('#bt-spot, #bt2-spot, #bt3-spot, #bt4-spot').click(function(){
-        $('body,html').animate({scrollTop:$('#s-spot').offset().top-200}, 800);
+    $('#bt-music, #bt2-music, #bt3-music').click(function(){
+        $('body,html').animate({scrollTop:$('#music-content').offset().top-150}, 800);
     });
-    $('#bt-go, #bt2-go, #bt3-go, #bt4-go').click(function(){
-        $('body,html').animate({scrollTop:$('#s-go').offset().top-70}, 800);
+    $('#bt-game, #bt2-game, #bt3-game').click(function(){
+        $('body,html').animate({scrollTop:$('#game-content').offset().top-150}, 800);
+    });
+    $('#bt-dts, #bt2-dts, #bt3-dts').click(function(){
+        $('body,html').animate({scrollTop:$('#dts-content').offset().top-150}, 800);
+    });
+    $('#bt-voice, #bt2-voice, #bt3-voice').click(function(){
+        $('body,html').animate({scrollTop:$('#voice-content').offset().top-150}, 800);
+    });
+    $('#bt-remote, #bt2-remote, #bt3-remote').click(function(){
+        $('body,html').animate({scrollTop:$('#remote-content').offset().top-150}, 800);
     });
 });
 
