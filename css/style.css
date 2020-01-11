@@ -305,6 +305,7 @@ relative;z-index: 2; margin-bottom: 10px;}
 .gaming-content{ padding: 30px 0 50px; }
 .music-c{ padding: 0 40px; }
 .lottery{ padding-bottom: 120px;}
+.musi-red{ bottom: -170px; }
 }
 
 @media screen and (max-width: 1023px){
@@ -386,6 +387,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .lottery{ padding-bottom: 100px;}
 .fixed-c{ margin-top: 0; }
 .fixed-bg{ background-position: center top; height: 288px;}
+.musi-red{ bottom: -70px; }
 }
 
 @media screen and (max-width: 767px){
@@ -450,9 +452,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .musi-env{width: 60%; bottom: 0;left: 0;right: 0;margin: auto;}
 .musi-4, .musi-6{ margin-bottom: 0; }
 .lottery{ margin-top: -50px; z-index: 4;}
-
-.animated{ animation: none; }
-.classic-content, .p1, .p2, .p3, .p4, .p5, .p10, .p11, .p12, .tip-2 img, .tip-3 img, .tip-4 img, .p9{ visibility: visible; }
+.musi-red{ display: none; }
 }
 
 @media screen and (max-width: 500px){
@@ -508,6 +508,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .musi ul li, .musi2 ul li{ width: 100%; }
 .musi-env{ width: 70%; }
 #buy-carousel{ padding-bottom: 0; }
+.f-btn1{ width:70px; }
+.f-bt{ border-radius: 10px; margin: 5px; padding: 5px; }
+.f-btn2{ width:50px; margin:3px 0; }
 }
 
 /*----- animation -----*/
