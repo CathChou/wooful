@@ -368,7 +368,10 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .music-c{ padding: 0 20px; }
 .musi ul li, .musi2 ul li{ width: 27%; height: auto; }
 .musi-env{ width: 100%; bottom: 0; left: 0; margin: auto; }
-.musi-1, .musi-2, .musi-3{ width: 90%; }
+.musi-1, .musi-2, .musi-3, .musi-4, .musi-5, .musi-6{ width: 90%; }
+.musi2 ul li{ padding-bottom: 50px; }
+.musi-4{ margin-bottom: 130px; }
+.musi-6{ margin-bottom: 70px; }
 }
 
 @media screen and (max-width: 767px){
@@ -423,17 +426,14 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .remo-1, .remo-2, .remo-3{ width: 40%; }
 .remo-3{ min-height: auto; }
 .musi{ margin-top: -280px; }
-.musi ul li, .musi2 ul li{ width: 70%; margin: 20px auto; }
-.musi-1, .musi-2, .musi-3{ width: 50%; }
+.musi ul li, .musi2 ul li{ width: 70%; margin: 20px auto; padding-bottom: 40px; }
+.musi-1, .musi-2, .musi-3, .musi-4, .musi-5, .musi-6{ width: 50%; }
 .musi{background: url(../images/music_bg_m.png) no-repeat center top}
+.musi2{background: url(../images/music_bg2_m.png) no-repeat center top}
 .musi-t{ margin: 80px auto 20px; }
-.musi-env{width: 80%; bottom: 0;left: 0;right: 0;margin: auto;}
+.musi-env{width: 60%; bottom: 0;left: 0;right: 0;margin: auto;}
+.musi-4, .musi-6{ margin-bottom: 0; }
 
-.classic-box{ width: 50%;}
-.classic{ padding: 30px 70px 90px; }
-.classic-box, .ig-box, .food-box, .spot-box{ width: 100%; }
-.classic-box, .classic-b1, .classic-b2, .classic-b3, .classic-b4, .classic-b5, .classic-b6, .ig-box2, .ig-box3, .ig-box4, .ig-box5,
-.classic-box p{ margin-top: 30px; }
 .animated{ animation: none; }
 .classic-content, .p1, .p2, .p3, .p4, .p5, .p10, .p11, .p12, .tip-2 img, .tip-3 img, .tip-4 img, .p9{ visibility: visible; }
 }
@@ -488,6 +488,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .method-t{ font-size: 1.375rem; }
 .method ol{ width: 75%; margin: 20px 0 0 40px; }
 .sub-bg{ height: 30px; width: 20%; }
+.musi ul li, .musi2 ul li{ width: 100%; }
+.musi-env{ width: 70%; }
 
 
 
