@@ -17,7 +17,6 @@
 <script src="/promo/js/respond.min.js"></script> 
 <link rel="stylesheet" href="css/ie.css"> 
 <![endif]--> 
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!--<link rel="stylesheet" type="text/css" href="css/docs.theme.min.css" />-->
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
@@ -236,7 +235,7 @@
 			</div>
 		</div>
 
-		<!--輪播-->
+		<!--贈品輪播-->
 	    <div id="gift-carousel">
 	    	<div class="row">
 		        <div class="owl-carousel owl-theme">
@@ -288,15 +287,34 @@
 		
 		<div class="container">
 			<div class="buy-t"><img src="images/buy_t.png" alt=""></div>
+			<!--特賣輪播-->
 			<div class="buy-c">
-				<a class="buy-box" href="#">
-					<div class="buy-pd">
-						<img src="images/buy1.png" alt="">
+				<div id="buy-carousel">
+					<div class="row">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<a class="buy-box" href="#">
+									<div class="buy-pd">
+										<img src="images/buy1.png" alt="">
+									</div>
+									<div class="date">1/23</div>
+									<p class="b white">Z906 5.1 環繞音效音箱系統</p>
+									<div class="price">$951</div>
+								</a>
+							</div>
+							<div class="item">
+								<a class="buy-box" href="#">
+									<div class="buy-pd">
+										<img src="images/buy1.png" alt="">
+									</div>
+									<div class="date">1/23</div>
+									<p class="b white">Z906 5.1 環繞音效音箱系統</p>
+									<div class="price">$951</div>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="date">1/23</div>
-					<p class="b white">Z906 5.1 環繞音效音箱系統</p>
-					<div class="price">$951</div>
-				</a>
+				</div>
 			</div>
 		</div>
 		
@@ -803,10 +821,11 @@
 			$(".c-hamburger").removeClass("is-open");
 		});
 	});
+	
 </script>
 <script>
 	$(document).ready(function() {
-		var owl = $('.owl-carousel');
+		var owl = $('#gift-carousel .owl-carousel');
 			owl.owlCarousel({
 			margin: 10,
 			nav: true,
@@ -820,10 +839,29 @@
 	    			},
 	    			1023: {
 	    			items: 3
-	    			}
 	    		}
-	  		})
-		})
+	    	}
+	  	})
+	})
+	$(document).ready(function() {
+		var owl = $('#buy-carousel .owl-carousel');
+			owl.owlCarousel({
+			margin: 10,
+			nav: true,
+			loop: true,
+			responsive: {
+	    			0: {
+	    			items: 1
+	    			},
+	    			767: {
+	    			items: 1
+	    			},
+	    			1023: {
+	    			items: 1
+	    		}
+	    	}
+	  	})
+	})
 </script>
 </body>
 </html>
