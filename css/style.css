@@ -140,7 +140,7 @@ height: 65px; background-size: 100%;}
 -moz-transition:all .5s ease;}
 
 /*----- lottery -----*/
-.lottery{ background:#E4AE3F; position: relative; padding-bottom: 280px;}
+.lottery{ background:#E4AE3F; position: relative; padding-bottom: 220px;}
 .lottery-box{ padding:40px 0 145px; border-radius:250px; width:100%; background-color:#FFEECB; border-top: 20px solid #AF8633; }
 .lottery-t{ width: 1020px; margin: 0 auto; position: relative;}
 .lottery-t-img{ width: 1020px; margin: 0 auto;}
@@ -171,10 +171,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02027', end
 -moz-transition:all .5s ease;}
 #gift-carousel .owl-carousel .item .contain .pic img:hover{transform: scale(1.1); -webkit-transform: scale(1.1);}
 #gift-carousel .owl-carousel .item .contain p{ font-size: 1.312rem; color: #fff; font-weight: bold; position: absolute; bottom: 20px;}
-
-.buy-c{ background: url(../images/buy_bg.png) no-repeat center;background-size: contain; }
+#buy-carousel{ width: 1300px; margin: 0 auto; }
+.buy-c{ background: url(../images/buy_bg.png) no-repeat center;background-size: contain; margin-top: -60px; }
 .buy-t{ width: 1155px; margin: 0 auto; position: relative; z-index: 2;}
-.buy-box{ margin:0 auto; width: 773px; display: block; position: relative; z-index: 1; margin-top: -60px; text-align: center;}
+.buy-box{ margin:0 auto; width: 773px; display: block; position: relative; z-index: 1;text-align: center; padding-bottom: 60px;}
 .buy-box p{ font-size: 1.875rem;font-weight: bold; background: #660F13; border-radius: 40px; width: 80%; position: relative; margin: 5px auto;}
 .price{color: #C62128; font-size: 3rem; font-weight: bold; position: relative;}
 .date{font-size: 1.875rem;font-weight: bold; color: #660F13;margin-top: -170px; position: relative; font-weight: 100;}
@@ -285,6 +285,7 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .lottery-t-img{ width: 90%;}
 .lottery-t-number{ font-size: 10rem; top: 160px; }
 #gift-carousel{ width: 80%; padding-bottom: 80px;}
+#buy-carousel{ width: 80%; padding-bottom: 80px;}
 .buy-t{ width: 85%;}
 .buy-c{ background: none;}
 .buy-box{ width: 70%;}
@@ -295,6 +296,7 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .remo-c ul li{ width: 28%;}
 .gaming-content{ padding: 30px 0 50px; }
 .music-c{ padding: 0 40px; }
+.lottery{ padding-bottom: 120px;}
 }
 
 @media screen and (max-width: 1023px){
@@ -372,6 +374,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .musi2 ul li{ padding-bottom: 50px; }
 .musi-4{ margin-bottom: 130px; }
 .musi-6{ margin-bottom: 70px; }
+.lottery{ padding-bottom: 100px;}
 }
 
 @media screen and (max-width: 767px){
@@ -407,8 +410,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .lottery-t p{ font-size: 1.125rem; letter-spacing: 1px; }
 .btn{ width: 45%; margin: 20px auto;}
 #gift-carousel{ width: 75%; }
+#buy-carousel{ width: 90%; }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{ display: none; }
-.buy-box{ margin-top: -40px; width: 85%;}
+.buy-box{ width: 85%; padding-bottom: 0;}
 .date{ margin-top: -60px; }
 .buy-box p{ width: 100%;}
 .sale{ background: url(../images/sale_bg_m.jpg) no-repeat center top; padding: 35px 0 160px;}
