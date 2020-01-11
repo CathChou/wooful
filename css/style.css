@@ -508,9 +508,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .musi ul li, .musi2 ul li{ width: 100%; }
 .musi-env{ width: 70%; }
 #buy-carousel{ padding-bottom: 0; }
-.f-btn1{ width:70px; }
-.f-bt{ border-radius: 10px; margin: 5px; padding: 5px; }
-.f-btn2{ width:50px; margin:3px 0; }
+.f-btn1{ width:64px; }
+.f-bt{ border-radius: 10px; margin: 5px; padding: 3px 5px; }
+.f-btn2{ width:44px; margin:3px 0; }
 }
 
 /*----- animation -----*/
