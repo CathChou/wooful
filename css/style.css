@@ -37,7 +37,7 @@ width: 25%; }
 .red{ color: #C62128;}
 .red span{ color: #660F13;}
 .lottery-t, #gift-carousel, .buy-t, .buy-c, .sale-t, .sale-content, .gaming-t, .gaming-c, .musi-t,
-.music-c, .remo-t, .remo-c, .method{ visibility: hidden;}
+.music-c, .remo-t, .remo-c, .method, .musi-red{ visibility: hidden;}
 
 
 /*----- Logo -----*/
@@ -207,12 +207,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02027', end
 margin-top: -200px; z-index: 6;}
 .musi2{ background: url(../images/music_bg2.png) no-repeat center top; margin-top: -350px; position: relative; padding-top: 270px; z-index: 7;}
 .musi ul, .musi2 ul, .remo-c ul{ text-align: center; }
-.musi ul li, .musi2 ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding-bottom: 100px;
+.musi ul li, .musi2 ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding-bottom: 200px;
 position: relative; height: 420px;}
 .musi ul li p, .musi2 ul li p, .remo-c ul li p{ font-size: 1.875rem;  font-weight: bold;  text-align: center; display: block; position:
 relative;z-index: 2; margin-bottom: 10px;}
 .musi ul li p span, .musi2 ul li p span, .remo-c ul li p span{ display: block;font-size: 1.312rem; font-weight: 300;}
 .musi ul li p span.t, .musi2 ul li p span.t{ font-size: 1rem; letter-spacing: 2px; font-weight: bold; }
+.musi ul li a:hover, .musi2 ul li a:hover{transform: scale(1.1); -webkit-transform: scale(1.1);}
 .musi-t{ width: 451px; margin: 0 auto 20px;}
 .musi-1{ width: 205px; display: block; margin: 0 auto; position: relative;z-index: 2;}
 .musi-2{ width: 202px; display: block; margin: 0 auto; position: relative;z-index: 2;}
@@ -221,11 +222,13 @@ relative;z-index: 2; margin-bottom: 10px;}
 .musi-5{ width: 318px; display: block; margin: 0 auto; position: relative;z-index: 2;}
 .musi-6{ width: 237px; display: block; margin: 0 auto; position: relative;z-index: 2;}
 .musi-env{ width: 259px; position: absolute;bottom: -20px; left: 50%; margin-left: -130px; }
+.musi-red{ position: absolute; bottom: -400px; left: 0; margin: auto; }
 
 /*----- remote -----*/
-.remo{ background: url(../images/remote_bg.png) no-repeat center top; position: relative;margin-top: -280px;z-index: 2;padding-top: 250px; z-index: 8;}
+.remo{ background: url(../images/remote_bg.png) no-repeat center top; position: relative;margin-top: -230px;z-index: 2;padding-top: 250px; z-index: 8;}
 .remo-c{ border-radius: 40px; width: 100%; background-color: #FFEECB; padding: 20px 20px 0;margin-top: -90px;}
 .remo-c ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding: 20px 0;}
+.remo-c ul li a:hover{transform: scale(1.1); -webkit-transform: scale(1.1);}
 .remo-c ul li.remo3{vertical-align: top;}
 .remo-t{ width: 391px; margin: 0 auto 10px; position: relative; z-index: 1;}
 .remo-1{ width: 231px; display: block; margin: 0 auto 20px;}
@@ -257,8 +260,9 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .sale-c, .gaming-c{ padding: 0 100px; }
 .gaming-c ul{margin: 10px 0;}
 .gaming-r, .gaming-l{ width: 30%; }
-.remo{padding: 250px 40px 0;}
+.remo{padding: 250px 40px 0; background: url(../images/remote_bg.png) no-repeat center -50px; margin-top: -180px;}
 .music-c{ padding: 0 70px; }
+.musi2{ background: url(../images/music_bg2.png) no-repeat center -50px; margin-top: -260px;}
 }
 
 @media screen and (max-width: 1450px){
@@ -270,6 +274,7 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .musi ul li, .musi2 ul li{ width: 28.7%; }
 .sale-c, .gaming-c{ padding: 0 60px; }
 .sale-box p{ bottom: 20px; }
+.musi ul li, .musi2 ul li{ padding-bottom: 150px; }
 }
 
 @media screen and (max-width: 1280px){
@@ -365,7 +370,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sale-box p span{ font-size: 1.125rem;}
 .gaming-box{ width: 43%; margin: 10px 20px;}
 .gaming-r, .gaming-l{display: none;}
-.remo{background:url(../images/remote_bg_m.png) no-repeat center top; padding: 250px 20px 0;}
+.remo{background:url(../images/remote_bg_m.png) no-repeat center top; padding: 250px 20px 0; margin-top: -250px;}
 .remo-c ul li{ width: 27%; }
 .remo-1{ width: 130px; }
 .remo-2{ width: 160px; }
@@ -373,9 +378,10 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .method ol{ width: 90%; }
 .music-c{ padding: 0 20px; }
 .musi ul li, .musi2 ul li{ width: 27%; height: auto; }
-.musi-env{ width: 100%; bottom: 0; left: 0; margin: auto; }
+.musi-env{ width: 100%; bottom: -10px; left: 0; margin: auto; }
 .musi-1, .musi-2, .musi-3, .musi-4, .musi-5, .musi-6{ width: 90%; }
-.musi2 ul li{ padding-bottom: 50px; }
+.musi2 ul li{ padding-bottom: 120px; }
+.musi2{ padding-top: 220px; }
 .musi-4{ margin-bottom: 130px; }
 .musi-6{ margin-bottom: 70px; }
 .lottery{ padding-bottom: 100px;}
@@ -797,6 +803,22 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .slideInUp-5 {
   animation-name: slideInUp-5;
   -webkit-animation-name:slideInUp-5;
+}
+
+@keyframes slideInUp-6 {
+  0% { transform: translate3d(0, 10%, 0); visibility: visible; opacity: 0;}
+  100% { transform: translate3d(0, 0, 0); opacity: 1;}
+}
+.slideInUp-6 {
+  animation-name: slideInUp-6;
+  -webkit-animation-name:slideInUp-6;
+  animation-duration: .2s;
+  -webkit-animation-duration: .2s;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  visibility: visible !important;
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
 }
 
 
