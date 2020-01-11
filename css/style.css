@@ -429,6 +429,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sub-t, .sale-t{ width: 85%; }
 .remo-t, .gaming-t, .musi-t{ width: 60%; }
 .gaming-t{ margin: -120px auto 30px; }
+.remo{ background: url(../images/remote_bg_m.png) no-repeat center -180px; padding: 80px 20px 0; margin-top: -90px;}
 .remo-c{ padding: 70px 20px 0; }
 .remo-c ul li{ width: 90%;}
 .remo-1, .remo-2, .remo-3{ width: 40%; }
@@ -436,9 +437,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .musi{ margin-top: -200px; }
 .musi ul li, .musi2 ul li{ width: 70%; margin: 20px auto; padding-bottom: 40px; }
 .musi-1, .musi-2, .musi-3, .musi-4, .musi-5, .musi-6{ width: 50%; }
-.musi{background: url(../images/music_bg_m.png) no-repeat center top}
-.musi2{background: url(../images/music_bg2_m.png) no-repeat center top}
-.musi-t{ margin: 80px auto 20px; }
+.musi{background: url(../images/music_bg_m.png) no-repeat center -150px; margin-top: -60px;}
+.musi2{background: url(../images/music_bg2_m.png) no-repeat center -170px; margin-top: -180px; padding-top: 90px;}
+.musi-t{ margin: 10px auto 0; }
 .musi-env{width: 60%; bottom: 0;left: 0;right: 0;margin: auto;}
 .musi-4, .musi-6{ margin-bottom: 0; }
 .lottery{ margin-top: -50px; z-index: 4;}
