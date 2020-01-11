@@ -488,7 +488,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sale{ padding: 35px 0 140px;}
 .sale-c, .gaming-c{ padding: 0 20px; }
 .sale-box{ margin: 0;}
-.sale-box p{bottom: 20px; font-size: 1.5rem;}
+.sale-box p{bottom: 25px; font-size: 1.5rem;}
 .gaming-box{ width: 100%; }
 .gaming-t{margin: -90px auto 30px;}
 .remo-c ul li{ margin: 0 auto; padding: 10px 0; }
