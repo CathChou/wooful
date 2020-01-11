@@ -494,9 +494,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sub-bg{ height: 30px; width: 20%; }
 .musi ul li, .musi2 ul li{ width: 100%; }
 .musi-env{ width: 70%; }
-
-
-
+#buy-carousel{ padding-bottom: 0; }
 }
 
 /*----- animation -----*/
