@@ -230,7 +230,7 @@
 					<div class="lottery-t-img"><img src="images/lottery_t.png" alt=""></div>
 					<div class="lottery-t-number">194,704</div>
 					<p>活動期間於指定通路購買羅技商品<br>單筆訂單每<span>滿千</span>即可抽乙次，累積金額愈高機會愈多</p>
-					<div class="btn"><img src="images/btn.png" alt=""></div>
+					<div id="bt-method" class="btn"><a href="#"><img src="images/btn.png" alt=""></a></div>
 				</div>
 			</div>
 		</div>
@@ -683,6 +683,7 @@
 	</div>
 	<!--音樂不設線-->
 	<div id="music-content" class="musi">
+		<div class="musi-red animated"><img src="images/envelope_s_2.png" alt=""></div>
 		<div class="container">
 			<div class="musi-t animated"><img src="images/music_t.png" alt=""></div>
 			<div class="music-c animated">
@@ -716,6 +717,7 @@
 		</div>
 	</div>
 	<div class="musi2">
+		<div class="musi-red animated"><img src="images/envelope_s_2.png" alt=""></div>
 		<div class="container">
 			<div class="music-c animated">
 				<ul>
@@ -775,7 +777,7 @@
 	</div>
 
 	<!--活動辦法-->
-	<div class="method animated">
+	<div id="method-content" class="method animated">
 		<div class="container">
 			<p class="method-t">活動辦法</p>
 			<ol>
@@ -803,6 +805,14 @@
 			var topOfWindow = $(window).scrollTop();
 			if (imagePos < topOfWindow+700) {
 			$(this).addClass("fadeIndown");
+			}
+		});
+		$('.musi-red').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+700) {
+			$(this).addClass("slideInUp-6");
 			}
 		});
 	});
