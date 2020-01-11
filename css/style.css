@@ -19,10 +19,10 @@ h1, h3{ display: none;}
 a, button{ text-decoration:none; transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
 -moz-transition:all .5s ease;}
 
-/*----- custom -----*/
+/*----- custom -----*/	
 .wrap{ position: relative; }
 .logopic img, .kv img, .fixed-bg img, .fixed-c img, .lottery img, .sale img, .gaming img
-, .musi img, .musi2 img, .remo img, .classic img{ max-width: 100%;height: auto;display: block;}
+, .musi img, .musi2 img, .remo img, .classic img, .float img{ max-width: 100%;height: auto;display: block;}
 p.t{ font-size:1rem !important;color: #660F13; letter-spacing: 2px;}
 .container{width: 1680px; margin: 0 auto; position: relative;}
 .sub-t{ color: #660F13; font-size: 1.875rem; margin: 10px auto 15px; text-align: center; font-weight: bold; 
@@ -242,12 +242,11 @@ relative;z-index: 2; margin-bottom: 10px;}
 .method li{ margin: 25px 0;}
 .method li span{ color: #C62128;}
 
-/*----- back to top -----*/
-#back-top { position: fixed; bottom: 200px; right: 0; z-index:9999; border: 1px solid #e6e6e6;text-align: center; width: 50px; 
-height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; font-size: 24px; color: #fff; font-weight: normal;
--webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
-#back-top a { display: block; width: 100%; height: 100%;  -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; color: #fff;}
-#back-top:hover { background-color: rgba(51,51,51,1); }
+/*----- 浮動按鈕 -----*/
+.float{ position: fixed;right: 0;bottom: 5%; z-index: 100;}
+.f-btn1{ width:100px; display: block; margin: 0 auto; }
+.f-bt{ background: #FFFFFF; border-radius: 10px; margin: 10px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); padding: 5px 10px; }
+.f-btn2{ width:60px; display: block; margin:5px 0; }
 
 /*----- Responsive -----*/
 @media screen and (max-width: 1700px){
@@ -260,7 +259,7 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .sale-c, .gaming-c{ padding: 0 100px; }
 .gaming-c ul{margin: 10px 0;}
 .gaming-r, .gaming-l{ width: 30%; }
-.remo{padding: 250px 40px 0; background: url(../images/remote_bg.png) no-repeat center -50px; margin-top: -180px;}
+.remo{padding: 200px 40px 0; background: url(../images/remote_bg.png) no-repeat center -50px; margin-top: -180px;}
 .music-c{ padding: 0 70px; }
 .musi2{ background: url(../images/music_bg2.png) no-repeat center -50px; margin-top: -260px;}
 }
