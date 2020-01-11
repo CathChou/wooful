@@ -85,7 +85,7 @@ margin: 0 auto ; position: relative; height: 1000px;}
 
 /*----- fixedmenu -----*/
 .fixed-bg{ z-index: 3; position: relative; margin-top: -200px;background: url(../images/fixedmenu_bg.png) no-repeat center; height: 308px;}
-.fixed-c{ position: relative;background:#E4AE3F;z-index: 3; height: 200px; }
+.fixed-c{ position: relative;background:#E4AE3F;z-index: 100; height: 200px; }
 .fixed-box{ border-radius:40px; width:100%; background-color:#FFEECB; padding: 0 20px; position: absolute; top: -120px;}
 .fixed-box ul{ text-align: center; }
 .fixed-box ul:first-child, .scroll ul:first-child{ border-bottom: 1px solid #E5D2AA;}
@@ -133,7 +133,7 @@ height: 65px; background-size: 100%;}
 .scroll ul li a span.dts{ background: url(../images/menu6.png) no-repeat; width: 33px; display: block; margin-right: 10px;height: 29px; background-size: 100%;}
 .scroll ul li a span.voice{ background: url(../images/menu7.png) no-repeat; width: 39px; display: block; margin-right: 10px;height: 35px; background-size: 100%;}
 .scroll ul li a span.remote{ background: url(../images/menu8.png) no-repeat; width: 22px; display: block; margin-right: 10px;height: 36px; background-size: 100%;}
-.fixed { position: fixed ; top: 0 ; z-index: 100; width: 100% ; background: #FFEECB ; display: block; left: 0;}
+.fixed { position: fixed ; top: 0 ; width: 100% ; background: #FFEECB ; display: block; left: 0;}
 .fixed ul{ padding: 10px 0 !important;}
 .fixed li{ display: inline-block; margin: 0 30px;}
 .fixed li a:hover p.mt-2{color: #ffe400 !important;text-decoration:none; transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
@@ -180,19 +180,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02027', end
 .date{font-size: 1.875rem;font-weight: bold; color: #660F13;margin-top: -170px; position: relative; font-weight: 100;}
 
 /*----- sale -----*/
-.sale{ background: url(../images/sale_bg.png) no-repeat center top; margin-top: -130px; position: relative; padding: 35px 0 190px;}
+.sale{ background: url(../images/sale_bg.png) no-repeat center top; margin-top: -130px; position: relative; padding: 35px 0 190px; z-index: 4;}
 .sale-t{ width: 631px; margin: 0 auto;}
 .sale-c, .gaming-c, .music-c{ width: 100%; padding: 0 180px; }
 .sale-box, .gaming-box{ width: 29.3%; margin: 25px; display: inline-block; position: relative;}
 .sale-box:hover .sale-pd, .buy-box:hover .buy-pd{ transform: scale(1.1);transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
 -moz-transition:all .5s ease;}
-.sale-box p{ position: absolute;font-size: 1.875rem; left: 0; margin: auto; right: 0;bottom: 20px;width: 100%;font-weight: bold;  text-align: center;}
+.sale-box p{ position: absolute;font-size: 1.875rem; left: 0; margin: auto; right: 0;bottom: 35px;width: 100%;font-weight: bold;  text-align: center;}
 .sale-box p span{ font-size: 1.312rem; display: block; font-weight: 300; }
 .sale-box p span.t{font-size: 1rem; letter-spacing: 2px; font-weight: bold;}
 .sale-content{ padding: 10px 0;}
 
 /*----- gaming -----*/
-.gaming{ background: url(../images/game_bg.png) no-repeat center top; position: relative; padding: 35px 0 130px; margin-top: -70px;}
+.gaming{ background: url(../images/game_bg.png) no-repeat center top; position: relative; padding: 35px 0 130px; margin-top: -70px; z-index: 5;}
 .gaming-t{ width: 391px; margin: -150px auto 30px;}
 .gaming-content{ background: url(../images/game_bg2.png) no-repeat center top;}
 .gaming-c{ width: 100%; text-align: center; }
@@ -202,8 +202,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02027', end
 
 /*----- music -----*/
 .musi{ background: url(../images/music_bg.png) no-repeat center top; position: relative; padding: 35px 0 80px;
-margin-top: -200px;}
-.musi2{ background: url(../images/music_bg2.png) no-repeat center top; margin-top: -350px; position: relative; padding-top: 270px;}
+margin-top: -200px; z-index: 6;}
+.musi2{ background: url(../images/music_bg2.png) no-repeat center top; margin-top: -350px; position: relative; padding-top: 270px; z-index: 7;}
 .musi ul, .musi2 ul, .remo-c ul{ text-align: center; }
 .musi ul li, .musi2 ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding-bottom: 100px;
 position: relative; height: 420px;}
@@ -221,7 +221,7 @@ relative;z-index: 2; margin-bottom: 10px;}
 .musi-env{ width: 259px; position: absolute;bottom: -20px; left: 50%; margin-left: -130px; }
 
 /*----- remote -----*/
-.remo{ background: url(../images/remote_bg.png) no-repeat center top; position: relative;margin-top: -280px;z-index: 2;padding-top: 250px;}
+.remo{ background: url(../images/remote_bg.png) no-repeat center top; position: relative;margin-top: -280px;z-index: 2;padding-top: 250px; z-index: 8;}
 .remo-c{ border-radius: 40px; width: 100%; background-color: #FFEECB; padding: 20px 20px 0;margin-top: -90px;}
 .remo-c ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding: 20px 0;}
 .remo-c ul li.remo3{vertical-align: top;}
@@ -266,6 +266,8 @@ height: 50px; display: block;background: rgba(51,51,51,0.7); line-height: 50px; 
 .remo-2{ width:180px; }
 .remo-3{ width:290px; min-height: 237px; }
 .musi ul li, .musi2 ul li{ width: 28.7%; }
+.sale-c, .gaming-c{ padding: 0 60px; }
+.sale-box p{ bottom: 20px; }
 }
 
 @media screen and (max-width: 1280px){
@@ -328,7 +330,7 @@ display: block; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);}
 .is-open .c-hamburger__line:nth-child(1) ,.is-open .c-hamburger__line:nth-child(2){top: 23px;transform: rotate(135deg);
 transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .is-open .c-hamburger__line:nth-child(3){top: 23px;transform: rotate(225deg);}
-.kv{ height: 800px; }
+.kv{ height: 830px; padding-top: 60px; }
 .logopic{ width: 750px; }
 .logopic ul{ padding: 20px 0; }
 .logopic li{ padding: 0 15px; border-right: 1px solid #000; }
@@ -355,8 +357,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .buy-box{ width: 80%;}
 .buy-box p{ width: 80%; font-size: 1.375rem;}
 .date{ margin-top: -145px;font-size: 1.375rem;}
-.sale-c, .gaming-c{ padding: 0 40px; }
-.sale-box{ margin: 10px; width: 29.9%;}
+.sale-c, .gaming-c{ padding: 0 20px; }
+.sale-box{ margin: 10px; width: 30.1%;}
 .sale-box p{ bottom: 15px;}
 .sale-box p span{ font-size: 1.125rem;}
 .gaming-box{ width: 43%; margin: 10px 20px;}
@@ -375,10 +377,12 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .musi-4{ margin-bottom: 130px; }
 .musi-6{ margin-bottom: 70px; }
 .lottery{ padding-bottom: 100px;}
+.fixed-c{ margin-top: 0; }
+.fixed-bg{ background-position: center top; height: 288px;}
 }
 
 @media screen and (max-width: 767px){
-.kv{ height: 565px;}
+.kv{ height: 605px;}
 .logopic{ width: 500px;}
 .logopic li{ padding: 0 5px; border: none;}
 .logopic li a.b1{ width: 68px; }
@@ -418,7 +422,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sale{ background: url(../images/sale_bg_m.jpg) no-repeat center top; padding: 35px 0 160px;}
 .sale-c, .gaming-c{ padding: 0 60px; }
 .sale-box{ margin: 10px; width: 100%;}
-.sale-box p{ font-size: 1.375rem; bottom: 50px;}
+.sale-box p{ font-size: 1.375rem; bottom: 40px;}
 .gaming{ background: url(../images/game_bg_m.png) no-repeat center top; }
 .gaming-content{ padding: 0 0 50px; background: none; }
 .gaming-box{ width: 80%; margin-bottom: 20px !important;}
@@ -437,13 +441,14 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .musi-t{ margin: 80px auto 20px; }
 .musi-env{width: 60%; bottom: 0;left: 0;right: 0;margin: auto;}
 .musi-4, .musi-6{ margin-bottom: 0; }
+.lottery{ margin-top: -50px; z-index: 4;}
 
 .animated{ animation: none; }
 .classic-content, .p1, .p2, .p3, .p4, .p5, .p10, .p11, .p12, .tip-2 img, .tip-3 img, .tip-4 img, .p9{ visibility: visible; }
 }
 
 @media screen and (max-width: 500px){
-.kv{height: 480px;}
+.kv{height: 530px;}
 .menu-m li{ width: 49.2%; }
 .title, .logopic{ width: 320px;}{ width: 320px;}
 .logopic li{ padding: 0 2px;}
@@ -469,7 +474,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .g5{ width: 125px; bottom: 20px; left: 193px;}
 .g6{ width: 150px; bottom: 16px; margin-left: -75px;}
 .lottery{ padding-bottom: 180px;}
-.lottery-box{ border-radius: 30px; border-top: 5px solid #af8633; padding: 20px 0 145px; }
+.lottery-box{ border-radius: 0; border-top: 5px solid #af8633; padding: 20px 0 145px; }
 .lottery-t{ width: 310px; }
 .lottery-t-number{ font-size: 3.5rem; top: 53px; left: 40px; }
 .buy-t{ width: 90%;}
@@ -482,7 +487,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sale{ padding: 35px 0 140px;}
 .sale-c, .gaming-c{ padding: 0 20px; }
 .sale-box{ margin: 0;}
-.sale-box p{bottom: 30px;}
+.sale-box p{bottom: 20px;}
 .gaming-box{ width: 100%; }
 .gaming-t{margin: -90px auto 30px;}
 .remo-c ul li{ margin: 0 auto; padding: 10px 0; }
@@ -490,7 +495,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .musi ul li p span, .musi2 ul li p span, .remo-c ul li p span{ font-size: 1rem; }
 .method{ padding: 30px 0; }
 .method-t{ font-size: 1.375rem; }
-.method ol{ width: 75%; margin: 20px 0 0 40px; }
+.method ol{ width: 75%; margin: 20px 0 0 60px; }
 .sub-bg{ height: 30px; width: 20%; }
 .musi ul li, .musi2 ul li{ width: 100%; }
 .musi-env{ width: 70%; }
