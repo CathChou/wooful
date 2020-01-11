@@ -36,6 +36,8 @@ width: 25%; }
 .white { color: #fff;}
 .red{ color: #C62128;}
 .red span{ color: #660F13;}
+.lottery-t, #gift-carousel, .buy-t, .buy-c, .sale-t, .sale-content, .gaming-t, .gaming-c, .musi-t,
+.music-c, .remo-t, .remo-c, .method{ visibility: hidden;}
 
 
 /*----- Logo -----*/
@@ -192,7 +194,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02027', end
 .sale-content{ padding: 10px 0;}
 
 /*----- gaming -----*/
-.gaming{ background: url(../images/game_bg.png) no-repeat center top; position: relative; padding: 35px 0 130px; margin-top: -70px; z-index: 5;}
+.gaming{ background: url(../images/game_bg.png) no-repeat center top; position: relative; padding: 35px 0 130px; margin-top: -90px; z-index: 5;}
 .gaming-t{ width: 391px; margin: -150px auto 30px;}
 .gaming-content{ background: url(../images/game_bg2.png) no-repeat center top;}
 .gaming-c{ width: 100%; text-align: center; }
@@ -225,7 +227,7 @@ relative;z-index: 2; margin-bottom: 10px;}
 .remo-c{ border-radius: 40px; width: 100%; background-color: #FFEECB; padding: 20px 20px 0;margin-top: -90px;}
 .remo-c ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding: 20px 0;}
 .remo-c ul li.remo3{vertical-align: top;}
-.remo-t{ width: 391px; margin: 0 auto 10px;}
+.remo-t{ width: 391px; margin: 0 auto 10px; position: relative; z-index: 1;}
 .remo-1{ width: 231px; display: block; margin: 0 auto 20px;}
 .remo-2{ width: 277px; display: block; margin: 0 auto 20px;}
 .remo-3{ width: 399px; display: block; margin: 20px auto; min-height: 317px;}
@@ -798,14 +800,6 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 
-
-
-
-
-
-
-
-
 @keyframes fadeIndown {
   0% { opacity: 0;transform: translateY(-3%);}
   100% { opacity: 1;transform: translateY(0);}
@@ -820,48 +814,11 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 	visibility: visible !important;
 }
 
-@keyframes fadeInRight {
-  0% { opacity: 0;transform: translate3d(50%, -20%, 0);}
-  100% { opacity: 1; transform: none;}
-}
-@-webkit-keyframes fadeInRight {
-  0% { opacity: 0;transform: translate3d(50%, -20%, 0);}
-  100% { opacity: 1; transform: none;}
-}
-.fadeInRight {
-  animation-name: fadeInRight;
-  -webkit-animation-name: fadeInRight;
-  visibility: visible !important;
-}
 
-@keyframes shake {
-  0%, 100% {transform: translate3d(0, 0, 0);}
-  10%, 30%, 50%, 70%, 90% {transform: translate3d(-5px, 0, 0);}
-  20%, 40%, 60%, 80% {transform: translate3d(10px, 0, 0);}
-}
-.shake {
-  animation-name: shake;
-  -webkit-animation-name: shake;
-  animation-duration: 12s;
-  -webkit-animation-duration: 12s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
 
-@keyframes flash {
-  0% { opacity: 1;}
-  25% { opacity: 1;}
-  30% { opacity: 0;}  
-  35% { opacity: 1;}
-  36% { opacity: 1;}
-  41% { opacity: 0;}  
-  46% { opacity: 1;}
-  100% { opacity: 1;}
-}
-.flash {
-  animation: flash 2s infinite 1.5s;
-  -webkit-animation: flash 2s infinite 1.5s;
-}
+
+
+
 
 
 
