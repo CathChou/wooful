@@ -69,27 +69,12 @@ $(function(){
     $('#bt-remote, #bt2-remote, #bt3-remote').click(function(){
         $('body,html').animate({scrollTop:$('#remote-content').offset().top-150}, 800);
     });
+    $('#bt-method').click(function(){
+        $('body,html').animate({scrollTop:$('#method-content').offset().top-150}, 800);
+    });
+
 });
 
-//backtotop
-$(document).ready(function(){
-    $("#back-top").hide();
-    $(function () {
-    $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-    $('#back-top').fadeIn();
-    } else {
-    $('#back-top').fadeOut();
-    }
-});
-    $('#back-top a').click(function () {
-        $('body,html').animate({
-        scrollTop: 0
-        }, 800);
-        return false;
-        });
-    });
-});
 
 
 
