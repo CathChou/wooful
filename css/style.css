@@ -191,7 +191,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02027', end
 .sale-box:hover .sale-pd, .buy-box:hover .buy-pd{ transform: scale(1.1); -webkit-transform: scale(1.1);}
 .sale-box p{ position: absolute;font-size: 1.875rem; left: 0; margin: auto; right: 0;bottom: 35px;width: 100%;font-weight: bold;  text-align: center;}
 .sale-box p span{ font-size: 1.312rem; display: block; font-weight: 300; }
-.sale-box p span.t{font-size: 1rem; letter-spacing: 2px; font-weight: bold;}
+.sale-box p span.t{font-size: 1rem; font-weight: bold;}
 .sale-content{ padding: 10px 0;}
 
 /*----- gaming -----*/
@@ -213,7 +213,7 @@ position: relative; height: 420px;}
 .musi ul li p, .musi2 ul li p, .remo-c ul li p{ font-size: 1.875rem;  font-weight: bold;  text-align: center; display: block; position:
 relative;z-index: 2; margin-bottom: 10px;}
 .musi ul li p span, .musi2 ul li p span, .remo-c ul li p span{ display: block;font-size: 1.312rem; font-weight: 300;}
-.musi ul li p span.t, .musi2 ul li p span.t{ font-size: 1rem; letter-spacing: 2px; font-weight: bold; }
+.musi ul li p span.t, .musi2 ul li p span.t{ font-size: 1rem; font-weight: bold; }
 .musi ul li a:hover, .musi2 ul li a:hover{transform: scale(1.1); -webkit-transform: scale(1.1);}
 .musi-t{ width: 451px; margin: 0 auto 20px;}
 .musi-1{ width: 205px; display: block; margin: 0 auto; position: relative;z-index: 2;}
@@ -230,6 +230,7 @@ relative;z-index: 2; margin-bottom: 10px;}
 .remo-c{ border-radius: 40px; width: 100%; background-color: #FFEECB; padding: 20px 20px 0;margin-top: -90px;}
 .remo-c ul li{ display: inline-block; text-align: center; width: 30%; margin: 0 20px; padding: 20px 0;}
 .remo-c ul li a:hover{transform: scale(1.1); -webkit-transform: scale(1.1);}
+.remo-c ul li p.t{ letter-spacing: inherit !important; }
 .remo-c ul li.remo3{vertical-align: top;}
 .remo-t{ width: 391px; margin: 0 auto 10px; position: relative; z-index: 1;}
 .remo-1{ width: 231px; display: block; margin: 0 auto 20px;}
