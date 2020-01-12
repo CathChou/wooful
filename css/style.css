@@ -37,7 +37,7 @@ width: 25%; }
 .red{ color: #C62128;}
 .red span{ color: #660F13;}
 .lottery-t, #gift-carousel, .buy-t, .buy-c, .sale-t, .sale-content, .gaming-t, .gaming-c, .musi-t,
-.music-c, .remo-t, .remo-c, .method, .musi-red{ visibility: hidden;}
+.music-c, .remo-t, .remo-c, .mmm, .musi-red{ visibility: hidden;}
 
 
 /*----- Logo -----*/
@@ -45,7 +45,8 @@ width: 25%; }
 .logopic ul{ padding: 25px 0;}
 .logopic li{ display: inline-block; padding: 0 30px; border-right: 2px solid #000; vertical-align: middle;}
 .logopic li:last-child { border-right: none;}
-.logopic li a{ display: block; margin:0 auto; cursor: default; clear:both; position:relative; top: 0;}
+.logopic li a{ display: block; margin:0 auto; clear:both; position:relative; top: 0;}
+.logopic li a:hover{ top: 5px;}
 .logopic li a.b1{ width: 95px;}
 .floater{ float:left; height:50%;  width:1px; /* only for IE7 */}
 .floater-b1{margin-bottom:-16px;}
@@ -186,8 +187,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02027', end
 .sale-t{ width: 631px; margin: 0 auto;}
 .sale-c, .gaming-c, .music-c{ width: 100%; padding: 0 180px; }
 .sale-box, .gaming-box{ width: 29.3%; margin: 25px; display: inline-block; position: relative;}
-.sale-box:hover .sale-pd, .buy-box:hover .buy-pd{ transform: scale(1.1);transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
--moz-transition:all .5s ease;}
+.sale-box .sale-pd, .buy-box .buy-pd{ transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease; -moz-transition:all .5s ease;}
+.sale-box:hover .sale-pd, .buy-box:hover .buy-pd{ transform: scale(1.1); -webkit-transform: scale(1.1);}
 .sale-box p{ position: absolute;font-size: 1.875rem; left: 0; margin: auto; right: 0;bottom: 35px;width: 100%;font-weight: bold;  text-align: center;}
 .sale-box p span{ font-size: 1.312rem; display: block; font-weight: 300; }
 .sale-box p span.t{font-size: 1rem; letter-spacing: 2px; font-weight: bold;}
